@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>
+	<!-- 引入css初始化文件 -->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<!-- 头部和底部 结构基本相同  我们做基本的公共样式 -->
+	<link rel="stylesheet" href="css/base.css" />
+	<title>京东(JD.COM)-综合网购首选-正品低价、品质保障、配送及时、轻松购物！</title>
+	<meta name="description" content="新鲜的潮品挖掘，特色的好货介绍，开启京东新消费主义和品质生活">
+	<meta name="Keywords" content="发现好货" />
+
+	<script src="jquery-1.12.4.js"></script>
+	<script src="demo.js"></script>
+	<script src="animate.js" type="text/javascript"></script>
+	<script src="shou.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="topPart">
+	<!-- 快速导航栏部分 start-->
+	<div class="shortcut">
+		<div class="w">
+			<ul class="fl city city-po">
+
+				<li> <i class="f11"></i><a href="#">京东首页</a></li>
+				<li> <i class="f11"></i><a href="#">北京</a></li>
+			</ul>
+			<ul class="fr">
+				<li>
+					<a href="#">你好，请登录</a>
+					<a href="#" class="f10">免费注册</a>
+				</li>
+				<li class="space"></li>
+				<li>
+					<a href="#">我的订单</a>
+				</li>
+				<li class="space"></li>
+				<li id="mjd">
+					<a href="#" >我的京东</a>
+					<i></i>
+				</li>
+				<li class="space"></li>
+				<li>
+					<a href="#">京东会员</a>
+				</li>
+
+				<li class="space"></li>
+				<li>
+					<a href="#">企业采购</a>
+				</li>
+				<li class="space"></li>
+				<li>
+					<a href="#">客户服务</a>
+					<i></i>
+				</li>
+				<li class="space"></li>
+				<li>
+					<a href="#">网站导航</a>
+					<i></i>
+				</li>
+				<li class="space"></li>
+				<li id="s-h">
+					<a href="#" class="mobile">手机京东
+						<img src="images/mobile.png" height="60" width="60" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 下拉菜单  start-->
+	<div class="dropdown w">
+
+		<!-- 我的京东 下拉菜单 start-->
+		<div class="my-jd">
+
+			<div class="my-jd-top">
+				<dl class="m-t-l">
+					<dd><a href="">待处理订单</a></dd>
+					<dd><a href="">返修退换货</a></dd>
+					<dd><a href="">降价商品</a></dd>
+				</dl>
+				<dl class="m-t-r">
+					<dd><a href="">消息</a></dd>
+					<dd><a href="">我的问答</a></dd>
+					<dd><a href="">我的关注</a></dd>
+				</dl>
+			</div>
+			<div class="my-jd-bottom">
+				<dl class="m-b-l">
+					<dd><a href="">我的京豆</a></dd>
+					<dd><a href="">我的白条</a></dd>
+				</dl>
+				<dl class="m-b-r">
+					<dd><a href="">我的优惠券</a></dd>
+					<dd><a href="">我的理财</a></dd>
+				</dl>
+			</div>
+
+		</div>
+		<!-- 我的京东 下拉菜单  end-->
+	</div>
+
+
+
+	<!-- 下拉菜单  end-->
+
+
+	<!-- 快速导航栏部分 end-->
+	<!-- 中间头部分 start -->
+	<div class="w middle">
+		<div class="logo">
+			<h1>  <!-- 提高权重  便利于搜索引擎优化 -->
+				<a href="#"></a>
+			</h1>
+
+		</div>
+		<div class="find">
+			<a href="#" class="find-hao">发现好货<a/>
+				<a href="#" class="find-sort">全部分类<i></i></a>
+		</div>
+		<!-- 搜索 -->
+		<div class="form">
+			<input id="inValue" type="text" placeholder="蚕丝被">
+			<!-- 按钮的意思 双标签 等价于 <input type="button" value=""> -->
+			<button id="btnSay"> <i></i> </button>
+		</div>
+		<!-- 购物车 -->
+		<div class="shopCar">
+			<a href="#" class="f10">我的购物车</a><i></i> <span>0</span>
+		</div>
+		<!-- 关键词 -->
+		<div class="hotwords">
+			<a href="#">超市周年庆</a>
+			<a href="#">10元抵300</a>
+			<a href="#">园艺周年庆</a>
+			<a href="#">女装新品</a>
+			<a href="#">三件8.8折</a>
+			<a href="#">蓝牙耳机</a>
+			<a href="#">无线键盘</a>
+		</div>
+
+	</div>
+	<!-- 中间头部分 end -->
+
+	<!--动态文字 start-->
+	<div class="trends">
+		<h3>당신은 검색하고 싶습니다.: <span class="word"></span><span class="typed-cursor" >|</span> ！</h3>
+
+	</div>
+	<!--动态文字 end-->
+
+</div>
+
+<!--旋转图片 start-->
+<div class="wrap" id="wrap">
+	<div class="slide" id="slide">
+		<ul>
+
+			<li><a href="#"><img src="images/90.jpg" alt=""/></a></li>
+			<li><a href="#"><img src="images/101.jpg" alt=""/></a></li>
+			<li><a href="#"><img src="images/86.jpg" alt=""/></a></li>
+			<li><a href="#"><img src="images/102.jpg" alt=""/></a></li>
+			<li><a href="#"><img src="images/103.jpg" alt=""/></a></li>
+		</ul>
+		<div class="arrow" id="arrow">
+			<a href="javascript:;" class="prev"></a>
+			<a href="javascript:;" class="next"></a>
+		</div>
+	</div>
+</div>
+<script>
+	var wrap = document.getElementById("wrap");  // 大盒子
+	var arrow = document.getElementById("arrow");  // 三角
+	var slider = document.getElementById("slide");
+	var lis = slider.getElementsByTagName("li");  // 所有要操作的盒子
+	wrap.onmouseenter = function() {  // 鼠标经过显示和隐藏 左右两个箭头
+		animate(arrow,{'opacity':100});
+	}
+	wrap.onmouseleave = function() {
+		animate(arrow,{'opacity':0});
+	}
+	//  存储了每个图片的信息
+	var json = [
+		{   //  1
+			width:500,
+			top:20,
+			left:50,
+			opacity:20,
+			z:2
+		},
+		{  // 2
+			width:400,
+			top:70,
+			left:0,
+			opacity:80,
+			z:3
+		},
+		{   // 3
+			width:400,
+			top:100,
+			left:200,
+			opacity:100,
+			z:4
+		},
+		{  // 4
+			width:400,
+			top:70,
+			left:600,
+			opacity:80,
+			z:3
+		},
+		{   //5
+			width:400,
+			top:20,
+			left:750,
+			opacity:20,
+			z:2
+		}
+	];
+	//  两个按钮点击事件
+	// 函数节流
+	var jieliu = true; //  用来控制函数节奏的 变量
+	var as = arrow.children;
+	change();
+	for(var k in as)
+	{
+		as[k].onclick = function() {
+			if(this.className == "prev")
+			{
+				//  alert("左侧")  移除第一个   放到json 最后一个
+				if(jieliu == true)
+				{
+					change(false);
+					jieliu = false;  // 点击完毕之后，立马取反
+				}
+
+			}
+			else
+			{
+				// alert('右侧');   把 最后一个json 删除   并且把最后一个添加到json 第一个位置
+				if(jieliu == true)
+				{
+					change(true);
+					jieliu = false;  // 点击完毕之后，立马取反
+				}
+			}
+		}
+	}
+
+	function change(flag) {
+		//  来判断
+		if(flag)
+		{
+			// 把 最后一个json 删除   并且把最后一个添加到json 第一个位置
+			json.unshift(json.pop());
+		}
+		else
+		{
+			//   移除第一个   放到json 最后一个
+			json.push(json.shift());
+		}
+		// 为什么给for呢？ 以为我们的json 有5个  盒子li 有 5个
+		for(var i=0;i<json.length; i++)
+		{
+			animate(lis[i],{
+				width: json[i].width,
+				top: json[i].top,
+				left: json[i].left,
+				opacity:json[i].opacity,
+				zIndex:json[i].z
+			},function(){ jieliu = true;})  // 回调函数是等动画执行完毕  才行
+		}
+	}
+
+
+
+
+
+</script>
+
+<!--旋转图片 end->
+
+<!-- 发现好货 背景图 start-->
+
+<div class="body-c">
+	<div class="bgc">
+
+		<!--固定导航栏 start-->
+		<div class="fixed-nav w" id="fixed-nav">
+
+			<a href="javascript:;" id="commend">推荐</a>
+			<a href="javascript:;" id="global-good">全球优品</a>
+			<span>|</span>
+		</div>
+		<!--固定导航栏 end-->
+
+		<!-- 图片展示 start-->
+
+		<div class="w show-photo s-p-1 haha">
+			<div class="one">
+				<div class="fl ff">
+					<div class="fl-p">
+						<a href=""><img src="images/huipu.jpg" alt=""/></a>
+					</div>
+					<div class="fl-font">
+						<h3>惠普薄锐轻薄本金色</h3>
+						<p>笔记本已成为人们工作和学习的必备之物，还在为选款犯难？轻薄本时代来临，惠普薄锐系列，小本窄边框，原来视界还可以大一些。1.54cm厚度，1.3kg重量，让生活轻松上阵。</p>
+						<div class="eyes"><a href="javascript:;"><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">8</a></div>
+					</div>
+				</div>
+				<div class="fr ff">
+					<div class="fl-p">
+						<a href="javascript:;"><img src="images/nai.jpg" alt=""/></a>
+					</div>
+					<div class="fl-font">
+						<h3>统一 阿萨姆 小奶茶</h3>
+						<p>这款奶茶的塑料瓶设计的有点意思，洗干净了还可以当凉水杯用，奶茶是椰子味的，低脂肪，没有添加色素防腐剂，口味非常好。</p>
+						<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">40</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 图片展示 end-->
+	</div>
+	<!-- 发现好货 背景图 end-->
+	<!--2-->
+	<div class="s-p-2 show-photo w haha">
+		<div class="fl ff">
+			<div class="fl-p">
+				<a href=""><img src="images/kadiya.jpg" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>阿玛尼 机械男表</h3>
+				<p>阿玛尼机械男表，高硬度矿物质表镜清晰高透，透视镂空表盘，直视机芯精密构造及运作。圆润表圈，营造超薄表圈之感。机芯镶21颗宝石，高端大气。皮质表带不易磨损，手感舒适。</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">5</a></div>
+			</div>
+		</div>
+		<div class="fr ff">
+			<div class="fl-p">
+				<a href=""><img src="images/taiguo.jpg" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>富安娜蚕丝枕</h3>
+				<p>外层蚕丝加内层中空纤维组合填充软硬适中又不易变形，外层布料选用仿真丝大提花面料触感柔软表面有光泽，高矮设计适中怎么睡肩颈都舒适。环保无纺布手提袋包装，收纳方便送亲友有档次。</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">10</a></div>
+
+			</div>
+		</div>
+	</div>
+	<!--3-->
+	<div class="s-p-2 show-photo w haha">
+		<div class="fl ff">
+			<div class="fl-p">
+				<a href=""><img src="images/liti.jpg" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>立体墙贴背景墙</h3>
+				<p>snnei室内立体欧式铁艺壁饰，让家居更具时尚感满足情趣生活，选用花卉为题材，有一种清新淡雅之美，简约风格的设计显得整个室内更加的简单、低调而不奢华，给热以轻松感。</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">20</a></div>
+
+			</div>
+		</div>
+		<div class="fr ff">
+			<div class="fl-p">
+				<a href=""><img src="images/riben.png" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>日本狮王粉刺暗疮膏</h3>
+				<p>日本备受欢迎的一款暗疮膏，专为红肿、化脓的痘痘进行杀菌抗炎设计，接近肌肤的PH值，使用温和不刺激，给人一种清爽不粘腻、轻薄不厚重的感觉。</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">44</a></div>
+
+			</div>
+		</div>
+	</div>
+	<!-- 4-->
+	<div class="s-p-2 show-photo w  haha">
+		<div class="fl ff">
+			<div class="fl-p">
+				<a href=""><img src="images/dress.jpg" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>红念棉麻盘扣连衣裙</h3>
+				<p>棉麻布料，透气又质感，穿着舒服。领口和袖口的盘扣设计，为复古风格增加了一份灵气，淑女气质满满。背部隐形拉链，穿脱方便同时美观。适合秋季穿着出门赏落叶、游山玩水。与景合一。</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">57</a></div>
+
+			</div>
+		</div>
+		<div class="fr ff">
+			<div class="fl-p">
+				<a href=""><img src="images/char.jpg" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>普丽兹真皮高档沙发</h3>
+				<p>精选优质的牛皮作为沙发表面的材质，能够体现主人对于品质生活的追求，又能装点出客厅的高雅与大气；淡雅的米黄色透着简约的北欧风格，内里用柔软的羽毛和公仔棉进行填充，饱满又柔软。</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">26</a></div>
+
+			</div>
+		</div>
+	</div>
+	<!-- 5-->
+	<div class="s-p-2 show-photo w haha">
+		<div class="fl ff">
+			<div class="fl-p">
+				<a href=""><img src="images/baicao.jpg" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>佰草集肌活新颜套装</h3>
+				<p>佰草集肌活新颜套装，洁面泡沫可以有效的去除肌肤污垢，添加了丰富的植物精华，可以为肌肤补水滋养，缓解肌肤不适和紧张感，整套搭配使用，快速恢复肌肤的健康状态。</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">35</a></div>
+
+			</div>
+		</div>
+		<div class="fr ff">
+			<div class="fl-p">
+				<a href=""><img src="images/lenovo.jpg" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>联想笔记本 2G独显</h3>
+				<p>选购笔记本追寻性价比？选TA准没错。呆萌价格，却搭载七代酷睿I7处理器和2G独显强效配置，多任务办公游刃有余；配备15.6英寸全高清屏幕，拥有1T机械硬盘，各方各面无愧实用之选。</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">6</a></div>
+
+			</div>
+		</div>
+	</div>
+	<!-- 6-->
+
+	<div class="s-p-2 show-photo w haha">
+		<div class="fl ff">
+			<div class="fl-p">
+				<a href=""><img src="images/ya.jpg" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>雅诗兰黛红石榴五件套</h3>
+				<p>添加了足量的红石榴成分，取自于纯天然，对肌肤没刺激，洁面泡沫丰富，洗后不紧绷，爽肤水质地水润，可以二次清洁皮肤，为后续营养品打基础，乳液和面霜为肌肤提供充足的营养，保湿滋润。</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">55</a></div>
+
+			</div>
+		</div>
+		<div class="fr ff">
+			<div class="fl-p">
+				<a href=""><img src="images/jueyou.jpg" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>爵友 可升降榻榻米床</h3>
+				<p>简约时尚风，多功能一体的设计，集储物书架、储物抽屉、升降电脑支架于一体；床头采用真皮材质，填充回弹海绵，背靠舒适感强。</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">99</a></div>
+
+			</div>
+		</div>
+	</div>
+	<!-- 7-->
+	<div class="s-p-2 show-photo w haha">
+		<div class="fl ff">
+			<div class="fl-p">
+				<a href=""><img src="images/milin.jpg" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>米林纳 可收纳子母床</h3>
+				<p>精选优质木材多层加工无毒无味，整体采用北欧原创风格设计，多功能与实用于一体，整套组合可根据自己喜好来搭建，并有多处为孩子设计的置物空间，隐藏式的抽屉和衣柜，拥有足够大的收纳空...</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">256</a></div>
+
+			</div>
+		</div>
+		<div class="fr ff">
+			<div class="fl-p">
+				<a href=""><img src="images/jiushan.jpg" alt=""/></a>
+			</div>
+			<div class="fl-font">
+				<h3>久山家居 实木摇椅</h3>
+				<p>独特的造型设计，看着有种圆润舒适感，实木而成的框架，布艺而就的坐和垫，优美的竖琴状扇形弧度，创作的灵感来源于温莎椅，舒适摇椅，享受生活。</p>
+				<div class="eyes"><a href=""><img src="images/eye.jpg" alt=""/></a><a class="eye-f" href="">855</a></div>
+
+			</div>
+		</div>
+	</div>
+	<!-- 8-->
+	<!-- 9-->
+	<!-- 10-->
+</div>
+
+
+<!--手风琴 start-->
+<div class="global w">
+	<ul class="shoufeng">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+<script>
+	var box = document.getElementsByClassName("global")[0];
+	var lis = box.children[0].children;
+	for(var i=0;i<lis.length;i++)
+	{
+		lis[i].style.backgroundImage = "url(images/"+(i+1)+".jpg)";
+		lis[i].onmouseenter = function() {
+			for(var i=0;i<lis.length;i++)
+			{
+				animate(lis[i],{width:100});
+			}
+			animate(this,{width:800});
+		}
+		lis[i].onmouseleave = function(){
+			for(var i=0;i<lis.length;i++)
+			{
+				animate(lis[i],{width:240});
+			}
+		}
+	}
+</script>
+<!--手风琴 end-->
+
+<!-- 返回顶部 start-->
+
+<div class="Go">
+
+	<img id="goTop" src="images/01.png" alt=""/>
+	<img id="p-e" src="images/02.png" alt=""/>
+	<img id="erweima" src="images/erweima.png" alt=""/>
+</div>
+
+<!-- 返回顶部 end-->
+
+
+
+
+
+
+
+<!-- 页面底部分 start  -->
+<footer>
+	<!-- 服务模块 -->
+	<div class="service">
+		<div class="w">
+			<ul>
+				<li>
+					<h5>多</h5>
+					<p>品类齐全，轻松购物</p>
+				</li>
+				<li>
+					<h5>多</h5>
+					<p>品类齐全，轻松购物</p>
+				</li>
+				<li>
+					<h5>多</h5>
+					<p>品类齐全，轻松购物</p>
+				</li>
+				<li>
+					<h5>多</h5>
+					<p>品类齐全，轻松购物</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 帮助模块 -->
+	<div class="w help">
+		<div class="fl">
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+			</dl>
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+			</dl>
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+			</dl>
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+			</dl>
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">购物流程</a></dd>
+			</dl>
+		</div>
+		<div class="fr coverage">
+			<h5>京东自营覆盖区县</h5>
+			<p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+			<a href="#">查看详情 > </a>
+		</div>
+	</div>
+
+	<div class="w copyright">
+		<p>
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+			<span>|</span>
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">京东公益</a>
+			<span>|</span>
+			<a href="#">English Site</a>
+			<span>|</span>
+			<a href="#">Media & IR</a>
+			<span>|</span>
+
+		</p>
+		<div>
+			<p>京公网安备 11000002000088号<span>|</span>京ICP证070359号<span>|</span>互联网药品信息服务资格证编号(京)-经营性-2014-0008<span>|</span>新出发京零 字第大120007号</p>
+			<p>互联网出版许可证编号新出网证(京)字150号<span>|</span>出版物经营许可证<span>|</span>网络文化经营许可证京网文[2014]2148-348号<span>|</span>违法和不良信息举报电话：4006561155</p>
+			<p>Copyright © 2004 - 2017  京东JD.com 版权所有|消费者维权热线：4006067733经营证照
+				京东旗下网站：京东支付|京东云</p>
+		</div>
+		<p class="foot-icon">
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</p>
+
+	</div>
+</footer>
+<!-- 页面底部分 end  -->
+</body>
+</html>
